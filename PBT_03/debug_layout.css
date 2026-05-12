@@ -1,0 +1,55 @@
+body {
+  font-family: Arial;
+}
+
+.container {
+  width: 960px;
+  margin: 20px auto;
+  border: 3px solid black;
+  overflow: auto;
+}
+
+/* ========================= */
+/* Cách 1: border-box */
+/* ========================= */
+
+.fix-1 .sidebar,
+.fix-1 .content {
+  box-sizing: border-box;
+}
+
+.fix-1 .sidebar {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  background: lightblue;
+}
+
+.fix-1 .content {
+  width: 660px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  float: left;
+  background: lightgreen;
+}
+
+/* ========================= */
+/* Cách 2: content-box */
+/* ========================= */
+
+.fix-2 .sidebar {
+  width: 258px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  background: pink;
+}
+
+.fix-2 .content {
+  width: 598px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  float: left;
+  background: orange;
+}

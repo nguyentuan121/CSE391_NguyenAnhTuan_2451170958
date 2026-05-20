@@ -1,0 +1,212 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* IMAGES RESPONSIVE */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HEADER */
+
+.header {
+  background: #222;
+  color: white;
+  padding: 15px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* MOBILE NAV */
+
+.nav {
+  display: none;
+}
+
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* CONTAINER */
+
+.container {
+  padding: 15px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  display: none;
+}
+
+/* PRODUCTS GRID */
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* PRODUCT CARD */
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card button {
+  padding: 10px 15px;
+  border: none;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* ADS */
+
+.ads {
+  display: none;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+
+  /* NAVIGATION */
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* SIDEBAR */
+
+  .sidebar {
+    display: block;
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .sidebar select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  /* PRODUCTS */
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 220px 1fr 200px;
+    gap: 20px;
+    align-items: start;
+  }
+
+  /* SIDEBAR */
+
+  .sidebar {
+    margin-bottom: 0;
+    position: sticky;
+    top: 20px;
+  }
+
+  /* PRODUCTS */
+
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* ADS */
+
+  .ads {
+    display: block;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .ad-box {
+    background: #ddd;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

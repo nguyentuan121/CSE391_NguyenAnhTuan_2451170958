@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard App</title>
+    <link rel="stylesheet" href="/PBT_09/keyboard_app/style.css" />
+  </head>
+  <body>
+    <h1>Keyboard Accessibility App</h1>
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <button id="prevBtn" aria-label="Previous Image">←</button>
+
+      <img
+        id="galleryImage"
+        src="https://placehold.co/600x300?text=Image+1"
+        alt="Gallery Image"
+      />
+
+      <button id="nextBtn" aria-label="Next Image">→</button>
+    </div>
+
+    <p>← → : Chuyển ảnh | 1-5 : Chọn ảnh | Space : Play/Pause</p>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Image Preview</h2>
+
+        <img id="modalImage" src="" alt="Preview" />
+
+        <button id="closeModal" aria-label="Close Modal">Close</button>
+      </div>
+    </div>
+
+    <!-- Command Palette -->
+    <div id="palette" class="palette">
+      <div class="palette-content">
+        <input
+          type="text"
+          id="commandInput"
+          placeholder="Type command..."
+          aria-label="Command Search"
+        />
+
+        <ul id="commandList"></ul>
+      </div>
+    </div>
+
+    <script src="/PBT_09/keyboard_app/app.js"></script>
+  </body>
+</html>

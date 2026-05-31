@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Anh Tuấn</title>
+    <link rel="stylesheet" href="/PBT_09/todo_app/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>📝 Todo APP</h1>
+      <p>Ứng dụng quản lý công việc - BTL CSE391</p>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Công việc hôm nay</h2>
+
+        <form id="todoForm">
+          <input type="text" id="todoInput" placeholder="Nhập công việc..." />
+          <button type="submit">Thêm</button>
+        </form>
+
+        <ul id="todoList"></ul>
+
+        <p id="count">0 items left</p>
+
+        <div class="filters">
+          <button type="button" data-filter="all">All</button>
+
+          <button type="button" data-filter="active">Active</button>
+
+          <button type="button" data-filter="completed">Completed</button>
+        </div>
+
+        <button type="button" id="clearCompleted">Clear Completed</button>
+
+        <hr />
+
+        <h2>Liên hệ nhóm</h2>
+
+        <p>
+          Nhóm trưởng:
+          <strong>Nguyễn Anh Tuấn</strong>
+        </p>
+
+        <p>
+          Facebook:
+          <a
+            href="https://www.facebook.com/nguyen.tuan.929937/"
+            target="_blank"
+          >
+            Nguyễn Tuấn
+          </a>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 - Nhóm BTL CSE391</p>
+    </footer>
+
+    <script src="/PBT_09/todo_app/app.js"></script>
+  </body>
+</html>
